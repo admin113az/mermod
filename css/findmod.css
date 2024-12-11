@@ -1,0 +1,166 @@
+.luuy {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.luuy h2 {
+    color: #0a6dee;
+}
+
+.luuy h3 a {
+    border: 2px solid rgb(236, 87, 17);
+    font-size: 18px;
+    padding: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 20px;
+    background: #46c909;
+}
+
+.new {
+    display: inline-block;
+  border: 2px solid rgb(209, 16, 16);
+  font-size: 17px;
+  padding: 2px;
+  font-weight: 800;
+  border-radius: 20px;
+  font-family: cursive;
+  transition: background-color 0.5s ease;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.search-bar input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #9ff318;
+  border-radius: 20px;
+  outline: none;
+  transition: border-color 0.5s;
+  font-size: 18px;
+}
+
+.search-bar input[type="text"]:focus {
+  border-color: #1cf1d5;
+}
+
+.search-bar .search-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 40px;
+  border-radius: 30%;
+  margin-left: 10px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.search-bar .search-icon:hover {
+  background-color: #00b39b;
+  transform: scale(1.1);
+}
+
+.search-bar .search-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 40px;
+    border-radius: 40%;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.search-bar .search-icon:hover {
+    background-color: #00b377;
+    transform: scale(1.1);
+}
+
+.st-heroes__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+.st-heroes__list a {
+    border: 2px solid rgb(4, 206, 88);
+    border-radius: 20px;
+}
+.st-heroes__item {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.st-heroes__item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.st-heroes__item--img {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.st-heroes__item--img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.st-heroes__item--name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .st-heroes__list {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+}
+
+@media (max-width: 576px) {
+    .st-heroes__list {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        padding: 5px;
+    }
+
+    .st-heroes__item--name {
+        font-size: 1rem;
+    }
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #363635;
+  color: #fff;
+  border-radius: 20px;
+}
+
+footer .social a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
